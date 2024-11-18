@@ -18,6 +18,8 @@
 # Regressão Linear	scikit-learn	modelo.fit(X, Y) seguido de modelo.coef_ e modelo.intercept_
 # Plotagem de Gráfico	matplotlib	plt.scatter(), plt.plot(), plt.show()
 
+# Esses dados foram fornecidos pelos professores Eliel Marlon de Lima Pinto Moreira e Tarcísio Lopes de Almeida Sousa
+
 # Importar bibliotecas e carregar dados
 import pandas as pd
 import numpy as np
