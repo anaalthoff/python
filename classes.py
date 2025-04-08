@@ -7,8 +7,9 @@
 # Delimite algumas espécies para definir o som.
 
 class Animal:
-    def __init__(self, nome):
+    def __init__(self, nome, especie):
         self.nome = nome
+        self.especie = especie
 
     def som(self):
         print("Som genérico de animal.")
@@ -21,20 +22,9 @@ class Gato(Animal):
     def som(self):
         print("Miau!")
 
-class Vaca(Animal):
-    def som(self):
-        print("Muu!")
-
-class Passaro(Animal):
-    def som(self):
-        print("Piu piu!")
-
 # Teste
-rex = Cachorro("Laika")
-rex.som()
-
-felix = Gato("Lola")
-felix.som()
+rex = Cachorro("Laika", "cachorro")
+felix = Gato("Lola", "gato")
 
 # 2. Crie uma classe Livro:
 
