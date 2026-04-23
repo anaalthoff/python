@@ -211,12 +211,12 @@ nota2 = float(input())
 media_ponderada = ((nota1 * 3) + (nota2 * 2))/5
 print("A média é:", media_ponderada)
 
-# Faça um programa em Python que calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) e o total de combustível gasto (em litros). A entrada é um valor inteiro representando a distância total percorrida (em Km), e um valor real representando o total de combustível gasto. Apresente o valor que representa o consumo médio do automóvel, seguido da mensagem "km/l". 
+# Faça um programa em Python que calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) e o total de combustível gasto (em litros). A entrada é um valor inteiro representando a distância total percorrida (em Km), e um valor real representando o total de combustível gasto. Apresente o valor que representa o consumo médio do automóvel, seguido da mensagem "km/l".
 # O programa mostra o consumo com o seguinte texto: "<consumo> km/l" (sem aspas, onde <consumo> é o valor calculado).
 distancia = int(input())
 combustivel = int(input())
 consumo = distancia/combustivel
-print(consumo,"km/l")
+print(consumo, "km/l")
 
 # Faça um programa em Python que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio (R). A fórmula para calcular o volume é: (4/3) * pi * R^3. Considere (atribua) para pi o valor 3.14. Dica: Ao utilizar a fórmula, procure usar (4/3.0) ou (4.0/3), pois algumas linguagens (dentre elas o C++), assumem que o resultado da divisão entre dois inteiros é outro inteiro. Se não conseguir calcular o cubo de R utilize R * R * R.
 # O programa mostra o volume da esfera com o seguinte texto: "O volume é: <volume>" (sem aspas, onde <volume> é o valor calculado).
@@ -225,3 +225,71 @@ pi = 3.14
 volume = (4/3.0) * pi * raio ** 3
 print("O volume é:", volume)
 
+# Leia dois números quaisquer e dividir o primeiro pelo segundo (evitando divisão por zero). Caso o segundo valor seja zero, informe como resposta "Erro: divisão por zero!".
+num1 = float(input())
+num2 = float(input())
+
+if num2 == 0:
+    print("Erro: divisão por zero!")
+else:
+    divisao = num1/num2
+    print(divisao)
+
+# Ler dois números inteiros e exibir o maior deles. Escreve o valor mesmo que o usuário tenha informado números iguais.
+num1 = float(input())
+num2 = float(input())
+
+if num1 > num2:
+    print(num1)
+elif num2 > num1:
+    print(num2)
+else:
+    print(num1)
+
+# Ler um número inteiro e imprimir se ele é par ou ímpar. Use como saída as strings "Par" e "Ímpar".
+num1 = float(input())
+if num1 % 2 == 0:
+    print("Par")
+else:
+    print("Ímpar")
+
+# Ler três números inteiros e exibir o maior deles. Exiba apenas o valor do maior.
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+maior = num1
+
+if num2 > maior:
+    maior = num2
+if num3 > maior:
+    maior = num3
+
+print(maior)
+
+# Faça um programa que calcule o IMC de uma pessoa (IMC = massa em kg / altura em metros elevado ao quadrado) e informe a sua classificação segundo a tabela a seguir, obtida na Wikipédia:
+
+#       IMC        	Classificação
+#       < 18,5      	Abaixo do peso
+# [18,5 - 25)	Saudável
+# [25 – 30)	Peso em excesso
+# [30 – 35)	Obesidade Grau I
+# [35 – 40)	Obesidade Grau II (severa)
+# >= 40	Obesidade Grau III (mórbida)
+
+massa = float(input())
+altura = float(input())
+imc = massa / (altura ** 2)
+
+if imc < 18.5:
+    print("Abaixo do peso")
+elif imc < 25:
+    print("Saudável")
+elif imc < 30:
+    print("Peso em excesso")
+elif imc < 35:
+    print("Obesidade Grau I")
+elif imc < 40:
+    print("Obesidade Grau II (severa)")
+else:
+    print("Obesidade Grau III (mórbida)")
