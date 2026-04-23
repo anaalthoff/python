@@ -129,3 +129,53 @@ print(resultado)
 # Crie um programa que utiliza uma função que:
 # Receba uma lista de números
 # Retorne a média
+
+def calcular_media(lista):
+    if len(lista) == 0:
+        return 0
+    return sum(lista) / len(lista)
+
+# Lista de exemplo
+numeros = [10, 8, 7, 9, 6]
+
+# Chamando a função
+media = calcular_media(numeros)
+
+print("Lista de números:", numeros)
+print("Média:", media)
+
+# Ler dois números quaisquer, calcular a soma, mostrar os números lidos e o resultado da soma
+num1 = float(input())
+num2 = float(input())
+
+sum = num1 + num2
+print(num1, num2, sum)
+
+# Ler dois números reais. Multiplicar o primeiro por 4 e o segundo por 0,6. Calcular a média aritmética dos resultados obtidos. Imprimir os valores lidos, os calculados e a média aritmética.
+num1 = float(input())
+num2 = float(input())
+
+num3 = num1 * 4
+num4 = num2 * 0.6
+
+media_aritmetica = (num3 + num4) / 2
+
+print(num1, num2, num3, num4, media_aritmetica)
+
+# Faça um programa em Python para calcular a área de uma elipse. O usuário entra com o valor do raio e o programa informa a área da elipse com o seguinte texto: "Área da elipse é:<n>" (sem aspas, onde <n> é o valor calculado). Considere o valor de pi como 3.14.
+raio_maior = float(input())
+raio_menor = float(input())
+area_elipse = raio_maior * raio_menor * 3.14
+print("Área da elipse é:", area_elipse)
+
+# Faça um programa em Python para ler dois valores quaisquer (real/float) para as variáveis A e B, efetuando a troca dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresente ao final os valores trocados.
+# Obs.: sim, se trocar a ordem da do print sem fazer nada vai funcionar. Mas NÃO é o que pede o exercício, seu esperto. ;-)
+
+num1 = float(input())
+num2 = float(input())
+temp = num1
+num1 = num2
+num2 = temp
+
+print(num1)
+print(num2)
