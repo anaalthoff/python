@@ -96,7 +96,8 @@ for fruta in frutas:
 # Conte quantos elementos existem
 # Adicione mais um item a lista
 
-palavras_tecnologia = ['programação', 'desenvolvimento', 'IA', 'linguagem', 'raciocínio']
+palavras_tecnologia = ['programação',
+                       'desenvolvimento', 'IA', 'linguagem', 'raciocínio']
 for palavra in palavras_tecnologia:
     print(palavra)
 
@@ -116,12 +117,17 @@ print("\nNova quantidade de elementos:", len(palavras_tecnologia))
 # Funções organizam código reutilizável.
 
 # Sintaxe:
+
+
 def nome_funcao(parametros):
     return resultado
 
 # Exemplo:
+
+
 def soma(a, b):
     return a + b
+
 
 resultado = soma(3, 5)
 print(resultado)
@@ -130,10 +136,12 @@ print(resultado)
 # Receba uma lista de números
 # Retorne a média
 
+
 def calcular_media(lista):
     if len(lista) == 0:
         return 0
     return sum(lista) / len(lista)
+
 
 # Lista de exemplo
 numeros = [10, 8, 7, 9, 6]
@@ -179,3 +187,41 @@ num2 = temp
 
 print(num1)
 print(num2)
+
+# Faça um programa em Python que calcule a área de um triângulo.
+# Leia dois números reais, o primeiro é a base e o segundo a altura.
+# Calcule e mostre a área do triângulo.
+# O programa mostra a área do triângulo cm o seguinte texto: "Área da triângulo é: <area>" (sem aspas, onde <area> é o valor calculado).
+base = float(input())
+altura = float(input())
+area = (base*altura)/2
+print("Área do triângulo é:", area)
+
+# Faça um programa em Python para ler dois números reais quaisquer, calcular o produto, mostrar os números lidos e o resultado do produto.
+# O programa mostra a área do triângulo cm o seguinte texto: "<numero1> vezes <numero2> é igual a <produto>" (sem aspas, onde <numero1> é o primeiro número, <numero2> o segundo e <produto> o valor calculado).
+num1 = float(input())
+num2 = float(input())
+produto = num1*num2
+print(num1, "vezes", num2, "é igual a", produto)
+
+# Faça um programa em Python para calcular a média ponderada de duas notas de um aluno. A primeira nota tem peso 3 e a segunda peso 2. Imprimir as notas lidas e a média calculada.
+# O programa mostra a média seguinte texto: "A média é: <media>" (sem aspas, onde <media> é o valor calculado).
+nota1 = float(input())
+nota2 = float(input())
+media_ponderada = ((nota1 * 3) + (nota2 * 2))/5
+print("A média é:", media_ponderada)
+
+# Faça um programa em Python que calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) e o total de combustível gasto (em litros). A entrada é um valor inteiro representando a distância total percorrida (em Km), e um valor real representando o total de combustível gasto. Apresente o valor que representa o consumo médio do automóvel, seguido da mensagem "km/l". 
+# O programa mostra o consumo com o seguinte texto: "<consumo> km/l" (sem aspas, onde <consumo> é o valor calculado).
+distancia = int(input())
+combustivel = int(input())
+consumo = distancia/combustivel
+print(consumo,"km/l")
+
+# Faça um programa em Python que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio (R). A fórmula para calcular o volume é: (4/3) * pi * R^3. Considere (atribua) para pi o valor 3.14. Dica: Ao utilizar a fórmula, procure usar (4/3.0) ou (4.0/3), pois algumas linguagens (dentre elas o C++), assumem que o resultado da divisão entre dois inteiros é outro inteiro. Se não conseguir calcular o cubo de R utilize R * R * R.
+# O programa mostra o volume da esfera com o seguinte texto: "O volume é: <volume>" (sem aspas, onde <volume> é o valor calculado).
+raio = float(input())
+pi = 3.14
+volume = (4/3.0) * pi * raio ** 3
+print("O volume é:", volume)
+
