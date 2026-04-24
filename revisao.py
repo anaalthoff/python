@@ -293,3 +293,85 @@ elif imc < 40:
     print("Obesidade Grau II (severa)")
 else:
     print("Obesidade Grau III (mórbida)")
+
+# Ler um número inteiro e imprimir a seguinte estrutura:
+
+# *
+# **
+# ***
+# ****
+# *****
+# ******
+
+# Obs.: o usuário entra com um valor que é a altura da estrutura (número de linhas) e a cada linha, são exibidos tantos asteriscos quanto o número da linha. Para desenhar três asteriscos, use: print('*'*3)
+
+num = int(input())
+for i in range(1, num + 1):
+    print("*" * i)
+
+# Calcular a média das notas de uma turma. Entrada do programa: o número de alunos da turma e na sequência a nota de cada um dos alunos. A média deve ser mostrada com uma casa decimal.
+alunos = int(input())
+soma = 0
+
+for i in range(alunos):
+    nota = float(input())
+    soma += nota
+
+media = soma/alunos
+print(f"{media:.1f}")
+
+# Ler dois números inteiros. Se os números forem iguais, imprimir a mensagem "Números iguais" e encerrar a execução. Caso contrário, imprimir o de maior valor.
+num1 = int(input())
+num2 = int(input())
+
+if num1 == num2:
+    print("Números iguais")
+elif num1 > num2:
+    print(num1)
+else:
+    print(num2)
+
+# Faça um programa que leia dois números inteiros. O primeiro é o valor inicial de um contador, e o segundo é o valor final do contador (garanta que o valor inicial fornecido é inferior ao valor final, independente dos valores digitados pelo usuário). Escreva na tela uma contagem que comece no primeiro número lido, escreva os números seguintes colocando apenas um número em cada nova linha da tela, até chegar ao valor final indicado.
+inicial = int(input())
+final = int(input())
+
+while inicial > final:
+    inicial, final = final, inicial
+
+for i in range(inicial, final+1):
+    print(i)
+
+# Faça um programa para calcular o fatorial de um número. A entrada do  programa é um valor inteiro e a saída mostra o número e seu fatorial (5! = 120).
+num = int(input())
+fatorial = 1
+
+for i in range(1, num + 1):
+    fatorial = fatorial * i
+    i = i + 1
+
+print(f'{num}! = {fatorial}')
+
+# Crie um programa em Python para ler como informação de entrada um número inteiro. O programa deve somar todos os valores de 1 até o valor informado. Por exemplo, se o usuário entrar com o número 50, o programa deverá somar todos os inteiros de 1 até 50 (1+2+3+...+49+50). Veja a resposta abaixo e corrija o algoritmo.
+# entrada de dados
+n = int(input())
+soma = 0
+
+# conta de 1 até n e soma todos os valores
+i = 1
+while i <= n:
+   soma = soma + i
+   i = i + 1
+
+# exibe o resultado da soma
+print(soma)
+
+# Faça um programa em Python para fazer a média de vários valores indicados pelo usuário. O usuário entra primeiramente com a quantidade de valores e em seguida a sequência de valores (tipo float). A saída do programa é a média de todos os valores.
+qtd = int(input())
+soma = 0
+
+for i in range(qtd):
+    valores = float(input())
+    soma += valores
+    
+media = soma/qtd
+print(media)
