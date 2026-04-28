@@ -438,3 +438,80 @@ for i in range(5):
 
 # Output
 print(valor)
+
+# Escreva um algoritmo que permita a leitura de 7 nomes e coloque em uma lista. Exiba a lista de trás para frente, exibindo no início o último nome informado e o ao final da lista o primeiro. Exiba um nome a cada linha.
+
+nomes = []
+
+for i in range(7):
+    nome = input()
+    nomes.append(nome)
+
+for i in range(6, -1, -1):
+    print(nomes[i])
+
+# Crie um programa em Python para ler uma frase, separar palavra por palavra e exibir cada palavra em uma linha.
+
+frase = input()
+palavras = frase.split()
+
+for palavra in palavras:
+    print(palavra)
+
+# Faça um algoritmo que leia o nome de 20 pessoas e exiba ao final a lista de nomes em ordem alfabética. Exiba um nome por linha.
+
+nomes = []
+for i in range(20):
+    nome = input()
+    nomes.append(nome)
+
+nomes.sort()
+
+for nome in nomes:
+    print(nome)
+
+# Fazer um programa para ler 10 strings contendo números ou expressões aritméticas. Após ler os strings, faça o Python avaliar as expressões e somar o resultado de todas as 10. Exiba o valor da soma ao final como ponto flutuante (float).
+
+expressoes = []
+
+for i in range(10):
+    expressao = input()
+    expressoes.append(expressao)
+
+soma = 0.0
+
+for exp in expressoes:
+    soma += float(eval(exp))
+
+print(soma)
+
+# Qual a saída do seguinte programa?
+str1 ='Universidade do Estado de Santa Catarina' 
+
+# O método .find() procura a primeira ocorrência da substring dentro da string e retorna o índice inicial onde ela começa
+valor =str1.find("Catarina")
+
+# Output
+print(valor)
+
+# Faça um programa em Python para inverter a primeira metade de uma string. O programa deve ler uma string, inverter a primeira metade (à esquerda) e salve a string com a nova configuração.
+
+# Exemplo de Entrada	   Exemplo de Saída
+# 1234567890               # 5432167890
+# SOCORRAM ME EM MARROCOS  # EM MARROCOS EM MARROCOS
+# 123456789                # 432156789
+
+s = input()
+
+n = len(s)
+metade = n // 2  # funciona para par e ímpar
+
+primeira = s[:metade]
+segunda = s[metade:]
+
+# inverte a primeira metade
+primeira_invertida = primeira[::-1]
+
+resultado = primeira_invertida + segunda
+
+print(resultado)
