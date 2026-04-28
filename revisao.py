@@ -359,8 +359,8 @@ soma = 0
 # conta de 1 até n e soma todos os valores
 i = 1
 while i <= n:
-   soma = soma + i
-   i = i + 1
+    soma = soma + i
+    i = i + 1
 
 # exibe o resultado da soma
 print(soma)
@@ -372,6 +372,69 @@ soma = 0
 for i in range(qtd):
     valores = float(input())
     soma += valores
-    
+
 media = soma/qtd
 print(media)
+
+# Escreva um algoritmo que permita a leitura de 7 números inteiros. Gere um vetor com os mesmos valores digitados, mas de maneira invertida, ou seja, o primeiro número lido ficará na última posição do vetor. Exiba o vetor ao final colocando um número a cada linha.
+
+vetor = []
+
+for i in range(7):
+    num = int(input())
+    vetor.append(num)
+
+for i in range(6, -1, -1):
+    print(vetor[i])
+
+# Crie um programa em Python para ler dois vetores de 15 posições de inteiros cada e mostre a interseção dos vetores. Primeiro faça a leitura dos 15 valores inteiros para o primeiro vetor e depois os 15 valores do segundo. Para facilitar, considere que os valores não se repetem dentro do mesmo vetor. Lembrando que intersecção são elementos repetidos em ambos sem repetição (observe que os valores iguais normalmente não estarão na mesma posição).
+
+vetor1 = []
+vetor2 = []
+
+for i in range(15):
+    num = int(input())
+    if num not in vetor1:
+        vetor1.append(num)
+
+for j in range(15):
+    num = int(input())
+    if num not in vetor2:
+        vetor2.append(num)
+
+for num in vetor1:
+    if num in vetor2:
+        print(num)
+
+# Faça um algoritmo que leia um vetor de 30 elementos inteiros e exiba o mesmo em ordem crescente. Imprima (exiba) um valor por linha.
+vetor = []
+
+for i in range(30):
+    num = int(input())
+    vetor.append(num)
+
+vetor.sort()
+
+for num in vetor:
+    print(num)
+
+# Fazer um programa para ler um vetor de 10 números inteiros, somar estes valores e exibir a soma.
+vetor = []
+
+for i in range(10):
+    num = int(input())
+    vetor.append(num)
+
+soma = sum(vetor)
+
+print(soma)
+
+# Qual a saída do seguinte programa?
+lista = [1, 2, 3, 4, 5]
+
+valor = 1
+for i in range(5):
+    valor = valor * lista[i]
+
+# Output
+print(valor)
