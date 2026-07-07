@@ -61,11 +61,13 @@ O material foi construído de forma incremental e serve tanto como registro do a
 ## Pré-requisitos
 
 - [Python 3.10 ou superior](https://www.python.org/downloads/) — a instrução `match`/`case` presente em alguns exercícios requer Python 3.10+.
-- Para os arquivos de **estatística e probabilidade**, instale as bibliotecas científicas:
+- Para os arquivos de **estatística e probabilidade**, instale as bibliotecas científicas listadas no arquivo [`requirements.txt`](requirements.txt):
 
 ```bash
-pip install numpy pandas scipy scikit-learn matplotlib
+pip install -r requirements.txt
 ```
+
+> Os demais exercícios utilizam apenas a biblioteca padrão do Python e não exigem dependências externas.
 
 ## Como executar
 
