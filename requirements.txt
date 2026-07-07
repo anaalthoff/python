@@ -1,0 +1,9 @@
+# Dependências utilizadas nos arquivos de estatística e probabilidade
+# (15_estatistica.py e 16_probabilidade.py).
+# Os demais exercícios usam apenas a biblioteca padrão do Python.
+
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
