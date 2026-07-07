@@ -77,7 +77,7 @@ git clone https://github.com/anaalthoff/python.git
 cd python
 
 # Execute o exercício desejado
-python ex1.py
+python 01_fundamentos.py
 ```
 
 > **Observação:** grande parte dos exercícios utiliza a função `input()` e, portanto, é interativa — os valores são solicitados durante a execução no terminal.
