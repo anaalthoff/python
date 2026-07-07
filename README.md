@@ -1,12 +1,10 @@
-# Algoritmos e Programação em Python — UDESC
+# Algoritmos e Programação em Python
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-brightgreen)
 ![Licença](https://img.shields.io/badge/licença-MIT-blue)
 
 Esse repositório reúne os exercícios, anotações e projetos desenvolvidos ao longo dos meus estudos em **Análise e Desenvolvimento de Sistemas**, partindo dos fundamentos da linguagem e avançando gradualmente até estruturas de dados, funções, recursividade, programação orientada a objetos e análise estatística de dados.
-
----
 
 ## Sumário
 
@@ -18,15 +16,11 @@ Esse repositório reúne os exercícios, anotações e projetos desenvolvidos ao
 - [Tecnologias e bibliotecas](#tecnologias-e-bibliotecas)
 - [Licença](#licença)
 
----
-
 ## Sobre o projeto
 
 Cada arquivo concentra um conjunto de exercícios sobre um tema específico da programação, com comentários explicativos que documentam a lógica aplicada e, em vários casos, apresentam **soluções alternativas** para o mesmo problema (por exemplo, resolvendo um mesmo exercício com `while` e com `for`, ou de forma iterativa e recursiva).
 
 O material foi construído de forma incremental e serve tanto como registro do aprendizado quanto como material de consulta rápida.
-
----
 
 ## Objetivos de aprendizagem
 
@@ -38,11 +32,9 @@ O material foi construído de forma incremental e serve tanto como registro do a
 - Aplicar os conceitos de **Programação Orientada a Objetos (POO)**.
 - Introduzir **estatística e probabilidade** com apoio de bibliotecas científicas.
 
----
-
 ## Estrutura do repositório
 
-| Arquivo | Tema | Conteúdo abordado |
+| Tema | Conteúdo abordado |
 |---|---|
 | Fundamentos | Entrada/saída, variáveis, tipos, saída formatada, cálculos geométricos, frações, MMC e potenciação |
 | Estruturas condicionais | `if`/`elif`/`else`, operadores lógicos, cálculo de IMC, ano bissexto, maior de N números |
@@ -66,8 +58,6 @@ O material foi construído de forma incremental e serve tanto como registro do a
 | Probabilidade | Cálculo do escore Z e distribuição normal com `scipy` |
 | Estatística | Média, mediana, variância, desvio padrão e regressão linear com `pandas` e `matplotlib` |
 
----
-
 ## Pré-requisitos
 
 - [Python 3.10 ou superior](https://www.python.org/downloads/) — a instrução `match`/`case` presente em alguns exercícios requer Python 3.10+.
@@ -76,8 +66,6 @@ O material foi construído de forma incremental e serve tanto como registro do a
 ```bash
 pip install numpy pandas scipy scikit-learn matplotlib
 ```
-
----
 
 ## Como executar
 
@@ -94,8 +82,6 @@ python ex1.py
 
 > **Observação:** grande parte dos exercícios utiliza a função `input()` e, portanto, é interativa — os valores são solicitados durante a execução no terminal.
 
----
-
 ## Tecnologias e bibliotecas
 
 - **Python** — linguagem principal.
@@ -104,8 +90,6 @@ python ex1.py
 - **SciPy** — cálculos estatísticos avançados.
 - **scikit-learn** — modelagem e análise preditiva.
 - **Matplotlib** — visualização de dados.
-
----
 
 ## Licença
 
